@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <com.example.y3033127kadai2.MyView
-        android:id="@+id/myView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
 
     <Button
         android:id="@+id/button"
@@ -25,6 +20,121 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/myView"
         app:layout_constraintVertical_bias="1.0" />
+
+
+    <com.example.y3033127kadai2.MyView
+        android:id="@+id/myView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="603dp" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/RED"
+                android:layout_width="143dp"
+                android:layout_height="wrap_content"
+                android:onClick="RED"
+                android:text="RED"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="278dp" />
+
+            <Button
+                android:id="@+id/BLUE"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:onClick="BLUE"
+                android:text="BLUE"
+                tools:layout_editor_absoluteX="168dp"
+                tools:layout_editor_absoluteY="296dp" />
+
+            <Button
+                android:id="@+id/GREEN"
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:onClick="GREEN"
+                android:text="GREEN"
+                tools:layout_editor_absoluteX="308dp"
+                tools:layout_editor_absoluteY="298dp" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="FS"
+                android:text="FS"
+                tools:layout_editor_absoluteX="278dp"
+                tools:layout_editor_absoluteY="74dp" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Stroke"
+                android:text="Stroke"
+                tools:layout_editor_absoluteX="320dp"
+                tools:layout_editor_absoluteY="187dp" />
+
+            <Button
+                android:id="@+id/Fill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Fill"
+                android:text="Fill"
+                tools:layout_editor_absoluteX="62dp"
+                tools:layout_editor_absoluteY="210dp" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:onClick="Set5"
+                android:text="5"
+                tools:layout_editor_absoluteY="96dp" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Set10"
+                android:text="10"
+                tools:layout_editor_absoluteY="122dp" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Set15"
+                android:text="15"
+                tools:layout_editor_absoluteY="635dp" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
